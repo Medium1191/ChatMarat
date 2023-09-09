@@ -7,11 +7,19 @@
 #include <stdio.h>
 #include <cstdlib>
 
+#if defined(__linux__)
+#include "mygetch.h"
+#define ENTER 10
+#else
+#include <conio.h>
+#define ENTER 13
+#endif
 
 
-void reg();
+class CSocket;
+void reg(CSocket* pClient);
 
-bool signUp();
+bool signUp(CSocket* pClient);
 
 void userMenu();
 
