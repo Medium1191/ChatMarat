@@ -1,7 +1,7 @@
 #include "mygetch.h"
 
 
-int _getch( ) {
+int mygetch( ) {
 struct termios oldt,
 newt;
 int ch;

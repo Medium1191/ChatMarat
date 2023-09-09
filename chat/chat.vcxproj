@@ -102,10 +102,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,16 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="chat.cpp" />
-    <ClCompile Include="ClientSocket.cpp" />
-    <ClCompile Include="CVarsSystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="message.cpp" />
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClientSocket.h" />
     <ClInclude Include="container.h" />
-    <ClInclude Include="CVarsSystem.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="chat.h" />
     <ClInclude Include="user.h" />
